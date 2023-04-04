@@ -16,5 +16,16 @@
 
         
         <h1>Videogames</h1>
+        <form action="/vg/new/" method = "POST">
+            {% csrf_token %}
+            <input type = "text"name = 'vgame_name' placeholder = 'videogame title' >
+            <input type = "text"name = 'img' placeholder = 'upload an image' >
+            <input type = "text"name = 'developer_name' placeholder = 'developer name' >
+            <input type = "text"name = 'year' placeholder = 'year' >
+            <textarea name = 'description' rows = 10 placeholder = 'description'></textarea>   
+            <input type = "text"name = 'categories' placeholder = 'insert the categories' >
+            
+            <button> SAVE </button>
+        </form>
     </body>
 </html>
