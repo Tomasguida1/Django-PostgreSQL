@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def lists_vg(request):
+    return render(request, 'list_vg.html')
